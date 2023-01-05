@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Georama';
+}
+/* section_1 */
+.sec_1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(1, 20, 68, 1);
+    min-height: 94vh;
+    width: 100%;
+}
+.sec_1 div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.sec_1 .sec_1_text p{
+    letter-spacing: 2px;
+    color: white;
+    margin: 10px;
+}
+.sec_1 .sec_1_text .tittl{
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight:bolder;
+    font-size: 70px;
+}
+.sec_1 .sec_1_text .serv_description{
+    font-style: italic;
+    font-weight: 900;
+    font-size: 30px;
+    margin-top: -20px;
+    line-height: 50px;
+}
+.sec_1 .sec_1_text .description{
+    line-height: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+}
+.sec_1 .sec_1_text .btn{
+    margin-top: 35px;
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    cursor: pointer;
+    background: #590000;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    transition: 0.5s;
+}
+.sec_1 .sec_1_text .btn:hover{
+    font-size: 17.5px;
+}
+.sec_1 .sec_1_photos .photo div{
+    background-color: aqua;
+    width: 175px;
+    height: 490px;
+    margin: 20px;
+    border-radius: 100px;
+    list-style: none;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sec_1 .sec_1_photos .photo .img_L{
+    background-image: url(imges/imges/man_mockup.jpg);
+    margin-top: -50px;
+}
+.sec_1 .sec_1_photos .photo .img_R{
+    background-image: url(imges/imges/woman_mockup.jpg);
+    margin-bottom: -50px;
+    background-position: -55px;
+}
+@media (max-width:768px){
+    .sec_1 .sec_1_photos .photo .img_L , .sec_1 .sec_1_photos .photo .img_R{
+        border-radius: 10%;
+        max-width: 500px;
+        width: 100%;
+        max-height: 400px;
+        margin: 20px;
+        background-color: none;
+    }
+    .sec_1 .sec_1_photos .photo .img_R{
+        background-position: center;
+    }
+    .sec_1{
+        flex-direction: column;   
+    }
+    .sec_1 .sec_1_text{
+        margin-top: 10%;
+    }
+    .sec_1 .sec_1_text .tittl{
+        font-size: 52.5px;
+    }
+    .sec_1 .sec_1_text .serv_description{
+        font-size: 37.5px;
+        margin: 0px;
+    }
+    .sec_1 .sec_1_text .description{
+        font-size: 14.25px;
+    }
+}
+/* section_2 */
+.sec_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(imges/imges/texture_1.png);
+    background-size: cover;
+}
+.sec_2 .title{
+    margin-top: 40px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+    color: #590000;
+    text-decoration: none;
+}
+.sec_2 ul{
+    margin-bottom: 40px;
+    max-width: 70%;
+}
+.sec_2 ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 40px;
+    min-height: 220px;
+    background-color: white;
+    border: 5px solid #590000;
+    border-radius: 5px;
+}
+.sec_2 ul li img{
+    width: 400px;
+    background-color:red;
+    height: 100%;
+}
+.sec_2 ul li .serv_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 400px;
+    height: 100%;
+    padding: 30px;
+    text-align: center;
+}
+.sec_2 ul li .serv_text .serv_title{
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+}
+.sec_2 ul li .serv_text .serv_discrip{
+    font-size: 22px;
+    font-weight: bolder;
+}
+.sec_2 ul li .serv_num{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    background-color: #590000;
+    color: white;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width:1045px){
+    .sec_2 ul{
+        min-width: 100%;
+    }   
+}
+
+
+
+
+
+
+@media (max-width:768px){
+    .sec_2 ul li{
+        flex-direction: column;
+    }
+    .sec_2 ul li img{
+        border-top: 5px solid #590000;
+    }
+}
