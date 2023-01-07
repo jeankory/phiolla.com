@@ -34,6 +34,10 @@ var navbar_style = `
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Georama';        
         }
         /*header-section*/
         .header{
@@ -160,8 +164,6 @@ const navSlide = () => {
         burger.classList.toggle('toggle');
     });
 }
+
 document.write(navbar, navbar_style);
 navSlide();
-
-
-
